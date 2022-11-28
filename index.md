@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+nav_order: 1
+---
 # Enigma Glass Training Materials
 ## Table of Contents
 - [Home](./index.md)
