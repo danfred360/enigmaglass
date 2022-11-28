@@ -1,6 +1,7 @@
 ---
 layout: default
-title: SIEM Training
+title: SIEM
+parent: Training
 nav_order: 2
 ---
 # Training Materials - What is SIEM?
