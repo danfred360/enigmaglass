@@ -2,6 +2,8 @@
 layout: default
 title: Home
 nav_order: 1
+description: "fo bar"
+permalink: /
 ---
 # Enigma Glass Training Materials
 [SIEM Training Materials](./training/siem)
