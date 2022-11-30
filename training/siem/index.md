@@ -4,6 +4,7 @@ title: SIEM
 parent: Training
 nav_order: 2
 ---
+{:toc}
 # Module 1: SIEM
 
 ## Learning Objectives
