@@ -4,8 +4,13 @@ title: SIEM
 parent: Training
 nav_order: 2
 ---
-{:toc}
 # Module 1: SIEM
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ## Learning Objectives
 - What is SIEM?
