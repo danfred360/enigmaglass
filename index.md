@@ -15,6 +15,8 @@ nav_order: 1
   - [Insider Threat]()
   - [False Positives]()
 
+  [!image alt text](./assets/img.png)
+
 # Navigation Structure
 {: .no_toc }
 
