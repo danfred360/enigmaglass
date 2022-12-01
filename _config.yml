@@ -1,10 +1,8 @@
-remote_theme: just-the-docs
-plugins:
-- jekyll-remote-theme
+theme: just-the-docs
 
 title: Enigma Glass Documentation
 description: Training materials and case studies for the Enigma Glass SIEM platform
-baseurl: "/enigmaglass" # the subpath of your site, e.g. /blog
+#baseurl: "/enigmaglass" # the subpath of your site, e.g. /blog
 url: "https://danfred360.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
@@ -54,7 +52,7 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Enigma Glass aux":
+  "Enigma Glass Platform":
     - "//www.enigmaglass.com/"
 
 # Makes Aux links open in a new tab. Default is false
