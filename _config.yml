@@ -8,9 +8,8 @@ url: "https://danfred360.github.io/" # the base hostname & protocol for your sit
 
 permalink: pretty
 
-plugins:
-  - jekyll-remote-theme
-  - just-the-docs
+# plugins:
+#  - jekyll-remote-theme
 
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"
