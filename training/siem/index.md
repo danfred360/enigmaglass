@@ -5,7 +5,6 @@ parent: Training
 nav_order: 2
 ---
 # Module 1: SIEM
-foobar
 
 <details open markdown="block">
   <summary>
