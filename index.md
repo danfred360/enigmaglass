@@ -2,7 +2,7 @@
 layout: default
 title: Home
 nav_order: 1
-description: "fo bar"
+description: "foo bar"
 permalink: /
 ---
 # Enigma Glass Training Materials
