@@ -7,3 +7,5 @@ gem "jekyll", "~> 4.3" # installed by `gem jekyll`
 gem "just-the-docs"            # the latest release - currently 0.3.3
 
 gem "jekyll-remote-theme"
+
+gem "github-pages"
