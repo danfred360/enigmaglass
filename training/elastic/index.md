@@ -18,22 +18,25 @@ nav_order: 1
 </details>
 
 ## Overview
-The Elastic Stack (or ELK stack) consists of open source products that were created by Elastic that ingests data from any source and any format, and allows users to search, analyze, and visualize the data in real time.
+The Elastic Stack, formerly known as the ELK Stack, is a collection of open-source tools that are typically used together to help analyze and visualize data. The components of the Elastic Stack include Elasticsearch, Logstash, and Kibana.
 
 Enigma Glass has been built using this software stack.
 
-The ELK Stack consists of four main components:
+The Elastic Stack consists of four major components:
 
 ![Elastic components](./assets/elastic-components.png)
 
-## Beats
-Beats are small agent processes that can run on edge devices that collects logs and sends them to Logstash.
+## Elasticsearch
+Elasticsearch is a search and analytics engine that is used to store, search, and analyze large volumes of data quickly and in near real time. It is a distributed, RESTful search and analytics engine that is built on top of Apache Lucene.
 
 ## Logstash
-Logstash is Elastics log ingestion pipeline. It can collect logs from the server it's running on, and it can also ingest logs from beats that exist on edge devices and may not have direct access to the Elasticsearch cluster.
+Logstash is a data processing pipeline that ingests data from a variety of sources, transforms it, and then sends it to a store like Elasticsearch. It is often used to collect, parse, and transform logs, but it can be used to process other types of data as well.
+
+### Beats
+Beats are small agent processes that can run on edge devices that collects logs and sends them to Logstash.
 
 ## Kibana
-Kibana is the visual layer of Elastic that provides a user interface for Elastic and a method of visualising data.
+Kibana is a visualization tool that is used to analyze and explore data stored in Elasticsearch. It provides a user-friendly interface that allows users to create and save custom dashboards that display data in a variety of formats, such as tables, maps, and graphs. It can also export visualisations as components that can be embedded in any webpage.
 
-## Elasticsearch
-Elastic search is a distributed, JSON-based search and analytics engine. The key store database backend begane as a fork of Apache Lucene, and it still supports querying with the Lucene language in addition to KQL (Kibana Query Language).
+## Elastic as a SIEM tool
+In the context of security infrastructure and event management, these components of the Elastic Stack can be used together to collect, store, and analyze log data from various sources, such as servers, security devices, and applications. This can help security teams to detect and investigate potential security threats, as well as to monitor the overall health and security of their systems. Additionally, the visualization capabilities of Kibana can be used to create dashboards that provide a real-time view of security-related data, helping security teams to quickly identify and respond to potential security incidents.
