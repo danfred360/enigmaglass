@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Case Studies
+title: Enigma Glass Case Studies
+parent: Training Materials
 nav_order: 4
 ---
 
-# Case Studies
+# Enigma Glass Case Studies
 {: .important-title .no_toc}
 
 The Case Studies utilize data already on the Enigma Glass platform, and recontextualizes this data to fit in with each unique investigation. Students are provided with the background scenario, and then are tasked with navigating the SIEM to investigate and search for evidence of insider threats, data integrity issues, and false positives. Throughout the Case Studies, students are asked questions to track their progress and challenge them to think critically. The case study ends with research questions aimed at increasing student knowledge and awareness of the threats and finishes with a threat intelligence report that tasks students with summarizing what they have done, and what they have learned in this case study. 
