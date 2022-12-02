@@ -6,7 +6,7 @@ grand_parent: Documentation
 nav_order: 1
 ---
 
-# Slack Webhook
+# Notification Webhook
 {: .important-title .no_toc}
 
 Coming soon
