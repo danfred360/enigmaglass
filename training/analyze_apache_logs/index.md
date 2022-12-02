@@ -24,7 +24,7 @@ This guide to analyzing Apache access logs with the Elastic stack provides conte
 
 SIEM solutions like Enigma Glass ingest all kinds of logs using small “agent” processes that run on devices. These agents can watch log files for changes, filter additions using software defined rules, and intelligently serve relevant data as json to a key-store index running somewhere else. The communication between the agents and the server can be TLS encrypted, which makes it possible to securely ingest logs from edge devices on entirely different networks.
 
-Agents are highly configurable and can be customized to support any application that logs to a file. The connection log of a single apache webserver is enough data to create some really interesting visualizations and see some bad actors in action.
+Agents are highly configurable and can be customized to support any application that logs to a file. The connection log of a single Apache webserver is enough data to create some really interesting visualizations and see some bad actors in action.
 
 ## Environment
 <dl>
@@ -100,7 +100,7 @@ Below is the contents of `/etc/logstash/conf.d/apache.conf` on our server, which
 ![apache.conf](./assets/apache.conf.png)
 
 ### Generating Logs
-Now that Elastic is configured to ingest logs from our webserver we can generate a few logs by visiting the site in a browser. Here is what our simple website looks like:
+Now that Elastic is configured to ingest logs from our webserver, we can generate a few logs by visiting the site in a browser. Here is what our simple website looks like:
 
 ![generating logs](./assets/website.png)
 
@@ -140,10 +140,10 @@ Here is what the discover page looks like on our server:
 
 You might think that the only log events we should see here are the ones that were generated when we visited the site in the browser, but here we can see that there are already more requests from other external ip addresses. Who are these people?
 
-### Visualising Data
-Data can be visualised in charts or graphs for aggregate analysis. Users can apply filters to the visualisations that change the scope of time and any other field in the event json.
+### Visualizing Data
+Data can be visualized in charts or graphs for aggregate analysis. Users can apply filters to the visualizations that change the scope of time and any other field in the event json.
 
-HTTP response status codes are returned by the webserver to the client to indicate whether the request has been completed sucessfully. The 5 major classes of status codes are:
+HTTP response status codes are returned by the webserver to the client to indicate whether the request has been completed successfully. The 5 major classes of status codes are:
 
 | Status Code | Class |
 |:-|:-|
@@ -172,7 +172,7 @@ Data visualizations can be a valuable tool when seeking to answer quick question
 
 ![Data visualisation](./assets/top-request-verbs.png)
 
-The HTTP method that is used to make the request determines the action to be preformed on the resource that is identified by the path in the request url.
+The HTTP method that is used to make the request determines the action to be performed on the resource that is identified by the path in the request url.
 
 | HTTP Method  | Meaning |
 |:-|:-|
@@ -183,11 +183,11 @@ The HTTP method that is used to make the request determines the action to be pre
 | `HEAD` | Used to retrieve the metadata that is associated with a URL without the message body in the response, which would contain the page content in a `GET` request. |
 | `OPTIONS` | Used to retreive the the permitted communication options for a URL or server.  |
 
-We can use a treemap visualisation to take a look at the most common resources that are requested (using the path in the URL) for each response code that is returned for all `POST` requests the the webserver has recieved:
+We can use a treemap visualization to take a look at the most common resources that are requested (using the path in the URL) for each response code that is returned for all `POST` requests the webserver has received:
 
 ![Post paths by response](./assets/visualise-post-paths-by-response.png)
 
-This visualisation was created by selecting the `response.keyword` and `request.keyword` fields to group by and filtering the log events to be passed to the visualisation to `POST` requests.
+This visualization was created by selecting the `response.keyword` and `request.keyword` fields to group by and filtering the log events to be passed to the visualization to `POST` requests.
 
 We can see that the most frequently requested resource to `POST` to on our webserver has a path of `/boaform/admin/formLogin`. A quick Google search of this path yields [this article](https://www.theregister.com/2020/04/16/fiber_routers_under_fire/) that suggests that what we might be seeing here is a botnet searching for vulnerable fiber optic routers.
 
@@ -214,11 +214,11 @@ Typically, dashboards in security infrastructure and event management software d
 
 In some cases, dashboards in security infrastructure and event management software might also provide tools for security personnel to take action to respond to potential threats. For example, the dashboard might allow security personnel to view detailed logs or reports, run security scans, or deploy security tools to prevent or mitigate potential threats.
 
-Data visualistaions can be collected in dashboards to allow users to see visualisations that can be made up of data from a variety of sources. Below is a screenshot of an example overview dashboard that a webmaster might user to monitor the perfomance of their apache server.
+Data visualizations can be collected in dashboards to allow users to see visualizations that can be made up of data from a variety of sources. Below is a screenshot of an example overview dashboard that a webmaster might user to monitor the perfomance of their Apache server.
 
 ![Webmaster dashboard](./assets/webserver-dashboard.png)
 
-This dashboard contains a few interesting visualisations using geo data from the log events.
+This dashboard contains a few interesting visualizations using geo data from the log events.
 
 ![Geo data dashboard](./assets/webmaster-geo-dashboard.png)
 
@@ -229,9 +229,9 @@ When security personnel are monitoring an organization's security systems, they 
 
 To "drill down" into a security event or incident, security personnel can use the tools and features provided by the security infrastructure and event management software. This might involve using the dashboard to view more detailed information about the event, using search and filter tools to find relevant log entries, or using other tools to collect and analyze data about the event.
 
-The goal of "drilling down" into a security event or incident is to gather as much information as possible about the event and its potential impact. This can help security personnel understand the nature and severity of the event, and can provide them with the information they need to take appropriate action to prevent or mitigate the event. Ultimately, "drilling down" into security events and incidents can help organizations improve their security posture and better protect themselves against potential threats.
+The goal of "drilling down" into a security event or incident is to gather as much information as possible about the event and its potential impact. This can help security personnel understand the nature and severity of the event and can provide them with the information they need to take appropriate action to prevent or mitigate the event. Ultimately, "drilling down" into security events and incidents can help organizations improve their security posture and better protect themselves against potential threats.
 
-In this screenshot example, the user has "drilled down" on the client country visualisation by selecting the United States. This dashboard was created to display various geo data, but by drlling down through the webmaster dashboard a filter has been applied that only populates the visualisations with events from the United States.
+In this screenshot example, the user has "drilled down" on the client country visualization by selecting the United States. This dashboard was created to display various geo data, but by drilling down through the webmaster dashboard a filter has been applied that only populates the visualizations with events from the United States.
 ![Drill down dashboard](./assets/geo-dashboard-drilldown.png)
 
 This dashboard has been created to display information regarding post requests made to the server.
