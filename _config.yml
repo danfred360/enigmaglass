@@ -6,11 +6,14 @@ url: "https://danfred360.github.io/" # the base hostname & protocol for your sit
 
 permalink: pretty
 
+# color_scheme: custom
+color_scheme: dark
+
 plugins:
   - jekyll-remote-theme
 
 # Set a path/url to a logo that will be displayed instead of the title
-#logo: "/assets/images/just-the-docs.png"
+# logo: "/assets/logo"
 
 # Enable or disable the site search
 # Supports true (default) or false
@@ -55,19 +58,19 @@ heading_anchors: true
 # Aux links for the upper right navigation
 aux_links:
   "Enigma Glass Platform":
-    - "//www.enigmaglass.com/"
+    - "https://www.enigmaglass.com/"
 
 # Makes Aux links open in a new tab. Default is false
-aux_links_new_tab: false
+aux_links_new_tab: true
 
 # Sort order for navigation links
 # nav_sort: case_insensitive # default, equivalent to nil
 nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
-nav_external_links:
-  - title: Enigma Glass
-    url: https://www.enigmaglass.com/
+# nav_external_links:
+#   - title: Enigma Glass
+#     url: https://www.enigmaglass.com/
 
 # Footer content
 # appears at the bottom of every page's main content
