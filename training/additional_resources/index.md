@@ -2,7 +2,7 @@
 layout: default
 title: Additional Resources
 parent: Training Materials
-nav_order: 4
+nav_order: 5
 ---
 
 # Additional Resources 

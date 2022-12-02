@@ -246,3 +246,6 @@ By selecting the part of the treemap that represents the 50% of requests that ar
 This training document has explained to use the Elastic stack to process, search, and visualize Apache access logs. It has also provided examples of how to use the various tools in the stack to gain insights into the server's traffic and performance.
 
 By reading the guide, users can learn how the Elastic stack can be used to analyze Apache access logs and gain insights into their data. This can provide context for understanding the capabilities of the Enigma Glass platform, which is built using the Elastic stack and provides similar features and functionality for analyzing log data.
+
+## Read more
+- [Visualize Apache Logs With Elastic Stack on Ubuntu 18.04 - Linode Guide](https://www.linode.com/docs/guides/visualize-apache-web-server-logs-using-elastic-stack-on-ubuntu-18-04/)

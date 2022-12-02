@@ -17,7 +17,9 @@ nav_order: 2
 </details>
 
 ## Components of SIEM platform
-A SIEM solution may cover all or only some of these components. Security concerns vary greatly from company to company, and some features are only used by government systems or where they are required by law.
+Security infrastructure and event management (SIEM) is a category of security software that helps organizations monitor, manage, and respond to security threats and events. SIEM systems typically consist of several functional components, including data aggregation, security data analytics, correlation and security event monitoring, forensic analysis, incident detection and response, real-time event response or alerting, threat intelligence, user and entity behavior analytics (UEBA), and IT compliance management. These components work together to provide organizations with a comprehensive view of their security posture, and to enable them to quickly identify and respond to potential threats.
+
+A SIEM solution may cover all or only some of these components. Security concerns vary from company to company, and some features are only used by government systems or where they are required by law.
 
 ### Data Aggregation
 Data Aggregation is the process of collecting data from multiple sources and organizing it into a centralized repository. This allows security analysts to have a comprehensive view of the data and make more informed decisions.
@@ -83,5 +85,5 @@ Most companies are expected to meet certain regulations regarding data security.
 
 Many of the components that have been covered here are required by some regulations. Companies may also need to comply with security audits by third party entities. SIEM platforms allow companies to prepare for these audits and know that they will pass ahead of time.
 
-## Sources
+## Read more
 - [SIEM Components](https://www.manageengine.com/log-management/siem/siem-components.html)
