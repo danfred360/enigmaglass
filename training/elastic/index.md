@@ -36,7 +36,7 @@ Logstash is a data processing pipeline that ingests data from a variety of sourc
 Beats are small agent processes that can run on edge devices that collects logs and sends them to Logstash.
 
 ## Kibana
-Kibana is a visualization tool that is used to analyze and explore data stored in Elasticsearch. It provides a user-friendly interface that allows users to create and save custom dashboards that display data in a variety of formats, such as tables, maps, and graphs. It can also export visualisations as components that can be embedded in any webpage.
+Kibana is a visualization tool that is used to analyze and explore data stored in Elasticsearch. It provides a user-friendly interface that allows users to create and save custom dashboards that display data in a variety of formats, such as tables, maps, and graphs. It can also export visualizations as components that can be embedded in any webpage.
 
 ## Elastic as a SIEM tool
 In the context of security infrastructure and event management, these components of the Elastic Stack can be used together to collect, store, and analyze log data from various sources, such as servers, security devices, and applications. This can help security teams to detect and investigate potential security threats, as well as to monitor the overall health and security of their systems. Additionally, the visualization capabilities of Kibana can be used to create dashboards that provide a real-time view of security-related data, helping security teams to quickly identify and respond to potential security incidents.
