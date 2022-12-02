@@ -1,7 +1,8 @@
+---
 layout: default
-title: SIEM
+title: Documentation
 parent: Training
-nav_order: 2
+---
 
 # Enigma Glass Documentation
 
@@ -15,8 +16,6 @@ nav_order: 2
 This is a basic document that will drill down into every aspect of Enigma Glass in hopes of providing an easy-to-use resource that can be used to understand the workings of this platform. This resource will be laid out in the order that sections show up on the platform, starting with security events and ending with log insight.  
 
 ---
-
-## Table of Contents
 
 <details open markdown="block">
   <summary>
@@ -35,13 +34,13 @@ This is a basic document that will drill down into every aspect of Enigma Glass 
 
 Under the home screen of the Security Events tab, one can find multiple widgets available to assist users in monitoring security events on the network. The widgets consist of: Quarantine Failure, Threat Quarantined, Vulnerable Application Detected, Cloud IOC, Security Events, Top Security Alerts, Top Users Triggering AV Alerts, DNS Trends (Cisco Umbrella), and Antivirus Events Over Time (Cisco AMP). The home screen offers a quick visual for administrators to monitor events quickly through the efficient use of graphs to break down specifics such as Top Security Alerts.
 
-![Security Events](./images/SecurityEvents.png)
+![Security Events](./images/SecurityEvents.PNG)
 
 There are currently 9 different widgets available when you open security events from the dashboard. Each one works similarly to the other; in that, you have the option to “Choose Timeframes” and “Discover.”
 
 The choose timeframes option allows you to choose between 14 different intervals. These intervals will determine the timeframe of the data that the infographic will show. For example, if you have it set to a half-hour, the infographic will only show data that was gathered in the last half-hour. It is also worth noting that the currently selected option is highlighted in blue. 
 
-![Discover](./images/Discover.png)
+![Discover](./images/Discover.PNG)
 
 The Discover option is a bit more complex. Choosing this option will take you to a new page with more information about the widget as shown below. This page will show you the corresponding infographic as well as the total number of hits for that category. In this example, there were 55 total discovered security events. 
 
@@ -51,7 +50,7 @@ The Discover option is a bit more complex. Choosing this option will take you to
 
 This widget is responsible for centralizing all known data related to quarantine failures occurring on workstations across the network. Quarantining is when a file that was supposed to be temporarily neutralized to protect the system. When this quarantine fails, it can potentially put the system at risk.
 
-![Quarantine Failure](./images/QuarantineFailure.png)
+![Quarantine Failure](./images/QuarantineFailure.PNG)
 
 ---
 
@@ -59,7 +58,7 @@ This widget is responsible for centralizing all known data related to quarantine
 
 This section deals with files that have been successfully quarantined. This section can be used to deal with the threats within these files and potentially release them from quarantine.
 
-![Threat Quarantined](./images/ThreatQuarantined.png)
+![Threat Quarantined](./images/ThreatQuarantined.PNG)
 
 ---
 
@@ -67,7 +66,7 @@ This section deals with files that have been successfully quarantined. This sect
 
 This section tracks applications and categorizes them if they are deemed vulnerable. Vulnerable applications are any programs that contain backdoors or other exploitable loopholes that could be used to access or disrupt the system.
 
-![Vulnerable Application Detected](./images/VulnerableAppDetected.png)
+![Vulnerable Application Detected](./images/VulnerableAppDetected.PNG)
 
 ---
 
@@ -75,7 +74,7 @@ This section tracks applications and categorizes them if they are deemed vulnera
 
 The security events tab contains a lot of important information. A security event can be described as unusual activity that could potentially cause harm or unintended access to a system. This page aggregates the data from these activities and categorizes them by how much of a threat they are (high, medium, or low). 
 
-![Security Events 2](./images/SecurityEvents2.png)
+![Security Events 2](./images/SecurityEvents2.PNG)
 
 ---
 
@@ -83,7 +82,7 @@ The security events tab contains a lot of important information. A security even
 
 Similar to the Security Events widget, the Top Security Alerts widget categorizes the events by severity: Low, Medium, High, and Critical. 
 
-![Top Alerts](./images/TopAlerts.png)
+![Top Alerts](./images/TopAlerts.PNG)
 
 ---
 
@@ -91,7 +90,7 @@ Similar to the Security Events widget, the Top Security Alerts widget categorize
 
 This widget is used for tracking which user account or system is responsible for triggering the antivirus alerts. The information from this section can be used to decide whether or not employees need more training, or even if there is a risk of an insider threat.
 
-![Top Users](./images/TopUsers.png)
+![Top Users](./images/TopUsers.PNG)
 
 ---
 
@@ -99,7 +98,7 @@ This widget is used for tracking which user account or system is responsible for
 
 This is a fairly simple section. It aggregates the information from every type of antivirus event. This includes events listed above such as a quarantine failure, threat detected, malware executed, etc.
 
-![Events over time](./images/OverTime.png)
+![Events over time](./images/OverTime.PNG)
 
 ---
 
@@ -111,7 +110,7 @@ The "Total hits on..." tile allows for customization by the user. The user can s
 
 The next two tiles both deal with calculating both the daily and weekly percentage change for the total number of hits.
 
-![Total Hits on](./images/TotalHitsOn.png)
+![Total Hits on](./images/TotalHitsOn.PNG)
 
 ---
 
@@ -121,7 +120,7 @@ The user can do a quick search from the search bar in the top right. This is jus
 
 There is, however, an advanced search option as well. The main benefit of this option is that you can search multiple strings at once. For example, if you are looking for a specific IP address that has high severity, you can type both of those in and they will search as different strings. 
 
-![Advanced Search](./images/AdvancedSearch.png)
+![Advanced Search](./images/AdvancedSearch.PNG)
 
 Enigma Glass also gives you the option to select which columns to view at once, through a dropdown with checkboxes. It also allows you to export data to 5 different data types including CSV, JSON, and XLS.
 
@@ -131,7 +130,7 @@ Enigma Glass also gives you the option to select which columns to view at once, 
 
 The network activity tab is a visualization tool present within Enigma Glass. Multicolored lines will appear on the world map indicating where an attack originated and the target of the attack. 
 
-![Network Activity](./images/NetworkActivity.png)
+![Network Activity](./images/NetworkActivity.PNG)
 
 Highlighting one of these lines will pull up an informational box. This box includes information such as the country of origin, the target country, the type of attack, the port attacked, and the time of the attack.
 
@@ -145,13 +144,13 @@ On this page, there are four different rules that have been set up. If one of th
 
 Clicking on any of the Alerts/Rule Names will expand the table. In the newly revealed table, there is a plethora of additional information that the user can use to investigate the event. There is also a ribbon containing each event that has triggered the alert.
 
-![Alerts View](./images/AlertsView.png)
+![Alerts View](./images/AlertsView.PNG)
 
 ---
 
 ## Log Insight
 
-![Log Insight](./images/LogInsight.png)
+![Log Insight](./images/LogInsight.PNG)
 
 ---
 
