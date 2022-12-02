@@ -6,28 +6,9 @@ description: "foo bar"
 permalink: /
 ---
 # Enigma Glass Training Materials
-[SIEM Training Materials](./training/siem)
+{: .important-title .no_toc}
 
-<span class="fs-8">
-[Download Insider Threat Case Study](https://github.com/danfred360/enigmaglass/raw/main/assets/Module%204_%20Case%20Studies/Insider%20Threat%20Case%20Study.docx){: .btn .btn-blue .mr-4}
-</span>
-
-<span class="fs-8">
-[Download Data Integrity Case Study](https://github.com/danfred360/enigmaglass/raw/main/assets/Module%204_%20Case%20Studies/Data%20Integrity%20Case%20Study.docx){: .btn .btn-blue .mr-4}
-</span>
-
-{: .important-title}
-> Site Under Development
->
-> This site is currently under development
->
-> It's not done yet
-
-# Navigation Structure
-{: .no_toc }
-
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
+Welcome to the Enigma Glass training resource. Here you'll find:
+ - System documentation for the Enigma Glass platform
+ - Training materials intended to provide the context required to understand the benefits of the Enigma Glass platform
+ - Follow-along friendly Case Studies to explore what you can do with Enigma Glass in its current state
