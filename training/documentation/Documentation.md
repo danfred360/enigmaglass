@@ -157,5 +157,3 @@ Clicking on any of the Alerts/Rule Names will expand the table. In the newly rev
 ## Disclaimer
 
 Some aspects or tools within Enigma Glass did not appear within this documentation. This is due to no data existing within those tools. This documentation excludes those sections because they will not be used in training materials, labs, or case studies.
-
-[Back to Top](#Enigma-Glass-Documentation)
