@@ -1,3 +1,5 @@
+I've forked this repo using an organization account I created for our group after submitting the rough draft; additional development is ongoing [here](https://github.com/enigmaglass-docs/enigmaglass). 
+
 # Enigma Glass Training Materials Site
 Welcome to the Enigma Glass training resource. Here you'll find:
  - System documentation for the Enigma Glass platform
