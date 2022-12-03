@@ -85,15 +85,10 @@ There are many public and private threat intelligence feeds that can be used to 
 
 SIEM platforms can aggregate these threat intelligence feeds and provide an environment where they can be compared to the current state of the network to identify potential security vulnerabilities.
 
-<<<<<<< HEAD:training/components-of-siem.md
 ---
 
 ### User and Entity Behaviour Analytics (UEBA)
 User and Entity Behaviour Analytics (UEBA) is a type of security analytics that involves analyzing user and entity behavior to identify potential security threats. This might involve analyzing data such as user activity logs and network traffic to identify unusual or suspicious behavior that could indicate a security threat.
-=======
-### User and Entity Behavior Analytics (UEBA)
-User and Entity Behavior Analytics (UEBA) is a type of security analytics that involves analyzing user and entity behavior to identify potential security threats. This might involve analyzing data such as user activity logs and network traffic to identify unusual or suspicious behavior that could indicate a security threat.
->>>>>>> eaeb1a7af0861f34763ce4640795c732b771b267:training/components_of_siem/index.md
 
 One common form of UEBA is to train a behavior model that represents the normal operation of the corporate network. Once this baseline is set, alerts can be triggered when the network activity deviates too far from the normal behavior model. These anomalies can then be investigated further or dealt with using predefined automated rules.
 
