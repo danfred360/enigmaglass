@@ -1,4 +1,4 @@
-name: Pull Request Build and Deploy
+name: Pheonix Build and Deploy
 on:
   pull_request:
     branches: [ development ]
@@ -7,7 +7,7 @@ on:
       - '**.md'
 
 env:
-  PR_REPO_NAME: app-pr-${{ github.event.pull_request.node_id }}
+  PR_REPO_NAME: pheonix-deploy-${{ github.event.pull_request.node_id }}
 
 jobs:
   create-page-host:
@@ -55,6 +55,7 @@ jobs:
           repository: enigmaglass-docs/${{ env.PR_REPO_NAME }}
           path: 'pr-deploy'
           token: ${{ secrets.PAT }}
+          ref: 'main'
       
       - name: Push files to target
         run: |
