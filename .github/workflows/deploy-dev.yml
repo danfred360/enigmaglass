@@ -2,11 +2,9 @@ name: Development Build and Deploy
 on:
   push:
     branches: [ development ]
-    paths:
-      - './**'
-      - '!.github/workflows/**'
-      - '.github/workflows/deploy-pr.yml'
-      - '!README.md'
+    paths-ignore:
+      - '.github/workflows/**'
+      - 'README.md'
   workflow_dispatch:
     inputs:
       logLevel:
