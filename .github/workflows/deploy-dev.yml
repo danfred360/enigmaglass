@@ -5,6 +5,8 @@ on:
     paths-ignore:
       - '.github/workflows/**'
       - 'README.md'
+    paths-include:
+      - '.github/workflows/deploy-dev.yml'
 # env:
 #   URL: dev.octobay.org
 
@@ -47,7 +49,7 @@ jobs:
       
       - name: Push files to target
         run: |
-          cp -r build/_site deploy
+          cp -r build deploy
           cd deploy
           echo ${{ env.URL }} > CNAME
           git add .
