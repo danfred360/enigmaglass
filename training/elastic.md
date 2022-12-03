@@ -40,3 +40,7 @@ Kibana is a visualization tool that is used to analyze and explore data stored i
 
 ## Elastic as a SIEM tool
 In the context of security infrastructure and event management, these components of the Elastic Stack can be used together to collect, store, and analyze log data from various sources, such as servers, security devices, and applications. This can help security teams to detect and investigate potential security threats, as well as to monitor the overall health and security of their systems. Additionally, the visualization capabilities of Kibana can be used to create dashboards that provide a real-time view of security-related data, helping security teams to quickly identify and respond to potential security incidents.
+
+## Using Elasticsearch & Kibana for Security Analytics to Fight the Dark Army on Mr. Robot
+_~5 min_
+<iframe width="587" height="440" src="https://www.youtube.com/embed/3sWxfLNV_wE" title="Using Elasticsearch & Kibana for Security Analytics to Fight the Dark Army on Mr. Robot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
