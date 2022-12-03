@@ -33,7 +33,6 @@ jobs:
         run: |
           cd build
           gem install bundler
-          chmod -R 777 /src/jekyll
           bundle install
           bundle exec jekyll build
           bundle exec rake search:init
