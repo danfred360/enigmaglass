@@ -26,7 +26,7 @@ Some additional things to consider when beggining to utilize the SIEM are what t
 ## What is the CIA Triad?
 The CIA stands for confidentiality, integrity and availability. The CIA triad is a model that is designed to guide organizations with their data security. It is meant to be used as a tool that helps guide organizations as they build a security strategy and develop security policies. 
 
-![CIA Triad](./images/cia_triad.png)
+<img src="./images/cia_triad.png" alt="drawing" width="500"/>
 
 ### Confidentiality
 Confidentiality is the principle that ensures data and information are kept secret and secure from those that are not meant to know of or have access to. This is important becuase without assured privacy and security all data would be accessible to anyone at any given time. 
