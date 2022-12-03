@@ -25,14 +25,6 @@ This is the development version of the Enigma Glass documentation. [Click here](
 This is a mermaid diagram
 
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
-```mermaid
 graph TD
     A[Client] --> B[Load Balancer]
     A[Client] --> F[Proxy]
@@ -40,3 +32,4 @@ graph TD
     B --> C[Server01]
     B --> D[Server02]
 ```
+{: .mx-auto}
