@@ -12,6 +12,8 @@ env:
 jobs:
   create-page-host:
     runs-on: ubuntu-latest
+    environment: 
+      name: pr-staging
     steps:
       - name: Create new repository for temporary deployment
         uses: enigmaglass-docs/create-repository-action@v2
