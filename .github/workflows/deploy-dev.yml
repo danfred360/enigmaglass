@@ -49,7 +49,6 @@ jobs:
         run: |
           cp -r build/_site/* deploy
           cd deploy
-          touch .nojekyll
           echo ${{ env.URL }} > CNAME
           git add .
           git commit -m $GITHUB_SHA
