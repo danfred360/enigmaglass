@@ -68,6 +68,7 @@ jobs:
       
       - name: Push files to target
         run: |
+          rm -r deploy/*
           rsync -avr --prune-empty-dirs --exclude '.git' --exclude 'README.md' build/* deploy
           cd deploy
           echo ${{ env.URL }} > CNAME

@@ -9,6 +9,14 @@ permalink: pretty
 # color_scheme: custom
 color_scheme: dark
 
+callouts:
+  warning:
+    title: Warning
+    color: red
+  important:
+    title: Important
+    color: blue
+
 plugins:
   - jekyll-remote-theme
 

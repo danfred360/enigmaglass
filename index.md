@@ -5,6 +5,9 @@ nav_order: 1
 description: "Development version of training materials and case studies for the Enigma Glass SIEM platform"
 permalink: /
 ---
+This is the development version of the Enigma Glass documentation. [Click here](https://enigmaglass-docs.github.io/enigmaglass/) to go to the most up to date version of this page.
+{: .warning}
+
 # Enigma Glass Training Materials
 {: .important-title .no_toc .fs-9}
 
@@ -18,9 +21,6 @@ Welcome to the Enigma Glass training resource. Here you'll find:
 > {: .warning }
 > A paragraph
 > </div>
-
-This is the development version of the Enigma Glass documentation. [Click here](https://enigmaglass-docs.github.io/enigmaglass/) to go to the most up to date version of this page.
-{: .warning}
 
 This is a mermaid diagram:
 
