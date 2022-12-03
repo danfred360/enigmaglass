@@ -74,5 +74,5 @@ jobs:
           cd deploy
           echo ${{ env.URL }} > CNAME
           git add .
-          git commit -m "$COMMIT_MSG"
+          git commit -m "$COMMIT_MSG $GITHUB_SHA"
           git push
