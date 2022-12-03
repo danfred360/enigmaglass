@@ -4,9 +4,9 @@ on:
     branches: [ development ]
     paths-ignore:
       - '.github/workflows/**'
-      - '**.md'
-env:
-  URL: dev.octobay.org
+      - 'README.md'
+# env:
+#   URL: dev.octobay.org
 
 jobs:
   build:
