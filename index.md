@@ -22,7 +22,7 @@ Welcome to the Enigma Glass training resource. Here you'll find:
 This is the development version of the Enigma Glass documentation. [Click here](https://enigmaglass-docs.github.io/enigmaglass/) to go to the most up to date version of this page.
 {: .warning}
 
-This is a mermaid diagram
+This is a mermaid diagram:
 
 ```mermaid
 graph TD
