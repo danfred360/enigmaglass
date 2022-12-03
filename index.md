@@ -2,7 +2,7 @@
 layout: default
 title: Home
 nav_order: 1
-description: "foo bar"
+description: "Training materials and case studies for the Enigma Glass SIEM platform"
 permalink: /
 ---
 # Enigma Glass Training Materials
