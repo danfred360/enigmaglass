@@ -34,7 +34,7 @@ Confidentiality is the principle that ensures data and information are kept secr
 With this principle, only those with authorized access will be able to access data that is secure. This principle helps guide individuals with securing data by implementing permissions, authentication, and authorization controls within their organization.
 
 ### Integrity
-Integrity is the principle the ensures data is consistent, accurate, reliable, and secure. Integrity ensures data in transit or at rest is not tampered with or modified in any way by any unauthorized individual.
+Integrity is the principle the ensures data is consistent, accurate, reliable, and secure. Integrity ensures data in transit or at rest is not tampered with or modified in any way by any unauthorized individuals.
 
 ### Availability
 Availability is the principle that ensures data is available and accessbile to authorized individuals while remaining secure and inaccessbible for those without access.
@@ -44,13 +44,13 @@ An insider threat is the potential for an inside person to use their authorized 
 
 The following are behaviors/actions typical of insider threats:
     
-    1. Espionage
-    2. Terrorism
-    3. Unauthorized disclosure of information
-    4. Corruption, including participation in transnational organized crime
-    5. Sabotage
-    6. Workplace violence
-    7. Intentional or unintentional loss or degradation of departmental resources or capabilities
+    - Espionage
+    - Terrorism
+    - Unauthorized disclosure of information
+    - Corruption, including participation in transnational organized crime
+    - Sabotage
+    - Workplace violence
+    - Intentional or unintentional loss or degradation of departmental resources or capabilities
 
 
 ### Types of Insider Threats
