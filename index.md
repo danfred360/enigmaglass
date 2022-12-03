@@ -19,6 +19,8 @@ Welcome to the Enigma Glass training resource. Here you'll find:
 > A paragraph
 > </div>
 
+This is a mermaid diagram
+
 ```mermaid
 graph TD;
     A-->B;
