@@ -27,3 +27,13 @@ graph TD;
     A-->C;
     B-->D;
     C-->D;
+```
+
+```mermaid
+graph TD
+    A[Client] --> B[Load Balancer]
+    A[Client] --> F[Proxy]
+    F --> B[Load Balancer]
+    B --> C[Server01]
+    B --> D[Server02]
+```
