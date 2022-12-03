@@ -5,7 +5,8 @@ on:
     paths-ignore:
       - '.github/workflows/**'
       - 'README.md'
-# env:
+env:
+  COMMIT_MSG: ${{ github.event.commits[0].message }}
 #   URL: dev.octobay.org
 
 jobs:
@@ -51,5 +52,5 @@ jobs:
           cd deploy
           echo ${{ env.URL }} > CNAME
           git add .
-          git commit -m $GITHUB_SHA
+          git commit -m $COMMIT_MSG
           git push
