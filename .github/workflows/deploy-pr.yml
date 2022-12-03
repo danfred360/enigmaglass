@@ -1,4 +1,4 @@
-name: Pull Request Build and Deploy
+name: Pheonix Build and Deploy
 on:
   pull_request:
     branches: [ development ]
@@ -7,14 +7,16 @@ on:
       - '**.md'
 
 env:
-  PR_REPO_NAME: app-pr-${{ github.event.pull_request.node_id }}
+  PR_REPO_NAME: pheonix-deploy-${{ github.event.pull_request.node_id }}
 
 jobs:
   create-page-host:
     runs-on: ubuntu-latest
+    environment: 
+      name: pr-staging
     steps:
       - name: Create new repository for temporary deployment
-        uses: enigmaglass-docs/create-repository-action@v1
+        uses: enigmaglass-docs/create-repository-action@v2
         with:
           name: ${{ env.PR_REPO_NAME }}
           org: enigmaglass-docs
@@ -27,8 +29,8 @@ jobs:
       name: pr-staging
       url: https://enigmaglass-docs.github.io/${{ env.PR_REPO_NAME }}/
     steps:
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
       
       # https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
       - name: Set GitHub Actions as Commit Author
@@ -43,26 +45,26 @@ jobs:
       
       - name: Build Pull Request
         run: |
-          cd build
+          cd pr-build
           gem install bundler
           bundle install
           bundle exec jekyll build
-          bundle exec rake search:init
           cd ..
       
       - name: Checkout temporary deployment target repo
         uses: actions/checkout@v2
         with:
-          repository: octobay/${{ env.PR_REPO_NAME }}
+          repository: enigmaglass-docs/${{ env.PR_REPO_NAME }}
           path: 'pr-deploy'
           token: ${{ secrets.PAT }}
+          ref: 'main'
       
       - name: Push files to target
         run: |
-          rm -r deploy/*
-          rsync -avr --prune-empty-dirs --exclude '.git' --exclude 'README.md' build/* deploy
-          cd deploy
+          rm -r pr-deploy/*
+          rsync -avr --prune-empty-dirs --exclude '.git' pr-build/* pr-deploy
+          cd pr-deploy
           echo ${{ env.URL }} > CNAME
           git add .
-          git commit -m "$COMMIT_MSG"
+          git commit -m "$COMMIT_MSG $GITHUB_SHA"
           git push
