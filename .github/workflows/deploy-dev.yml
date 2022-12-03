@@ -2,10 +2,11 @@ name: Development Build and Deploy
 on:
   push:
     branches: [ development ]
-    paths-ignore:
-      - '.github/workflows/**'
-      - '!.github/workflows/deploy-pr.yml'
-      - 'README.md'
+    paths:
+      - '*/**'
+      - '!.github/workflows/**'
+      - '.github/workflows/deploy-pr.yml'
+      - '!README.md'
 env:
   COMMIT_MSG: ${{ github.event.commits[0].message }}
 #   URL: dev.octobay.org
