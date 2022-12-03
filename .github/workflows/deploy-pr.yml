@@ -1,43 +1,34 @@
-name: Development Build and Deploy
+name: Pull Request Build and Deploy
 on:
-  push:
+  pull_request:
     branches: [ development ]
     paths-ignore:
       - '.github/workflows/**'
-      - 'README.md'
-  workflow_dispatch:
-    inputs:
-      logLevel:
-        description: 'Log level'
-        required: true
-        default: 'warning'
-        type: choice
-        options:
-        - info
-        - warning
-        - debug
-      tags:
-        description: 'Test scenario tags'
-        required: false
-        type: boolean
-      environment:
-        description: 'Environment to run tests against'
-        type: environment
-        required: false
+      - '**.md'
 
 env:
-  COMMIT_MSG: ${{ github.event.commits[0].message }}
-  URL: enigmaglass-docs.github.io/enigmaglass-dev/
+  PR_REPO_NAME: app-pr-${{ github.event.pull_request.node_id }}
 
 jobs:
-  build:
+  create-page-host:
     runs-on: ubuntu-latest
-    environment:
-      name: development
-      url: https://${{ env.URL }}
     steps:
-      - name: Setup Ruby
-        uses: actions/setup-ruby@v1
+      - name: Create new repository for temporary deployment
+        uses: enigmaglass-docs/create-repository-action@v1
+        with:
+          name: ${{ env.PR_REPO_NAME }}
+          org: enigmaglass-docs
+          access-token: ${{ secrets.PAT }}
+    
+  pr-build-deploy:
+    needs: create-page-host
+    runs-on: ubuntu-latest
+    environment: 
+      name: pr-staging
+      url: https://enigmaglass-docs.github.io/${{ env.PR_REPO_NAME }}/
+    steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
       
       # https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
       - name: Set GitHub Actions as Commit Author
@@ -48,23 +39,22 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
         with:
-          path: 'build'
+          path: 'pr-build'
       
-      - name: Build
+      - name: Build Pull Request
         run: |
           cd build
           gem install bundler
           bundle install
           bundle exec jekyll build
+          bundle exec rake search:init
           cd ..
       
-      # bundle exec rake search:init
-
-      - name: Checkout Dev Target
+      - name: Checkout temporary deployment target repo
         uses: actions/checkout@v2
         with:
-          repository: enigmaglass-docs/enigmaglass-dev
-          path: 'deploy'
+          repository: octobay/${{ env.PR_REPO_NAME }}
+          path: 'pr-deploy'
           token: ${{ secrets.PAT }}
       
       - name: Push files to target
