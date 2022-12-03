@@ -47,8 +47,7 @@ jobs:
       
       - name: Push files to target
         run: |
-          cp -r build/_site deploy
-          cp build/Gemfile deploy
+          rsync -av --prune-empty-dirs --exclude '.git' build deploy
           cd deploy
           echo ${{ env.URL }} > CNAME
           git add .
