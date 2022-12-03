@@ -42,7 +42,7 @@ Availability is the principle that ensures data is available and accessbile to a
 ## What Are Insider Threats?
 An insider threat is the potential for an inside person to use their authorized access or understanding of an organization to harm that organization. This can include malicious acts that negatively affect the integrity, confidentiality, and availability of the organization, its data, personnel, or facilities.
 
-![Insider Threats](./images/insider_threats.png =200x)
+<img src="./images/insider_threats.png" alt="drawing" width="200"/>
 
 The following are behaviors/actions typical of insider threats:
     
