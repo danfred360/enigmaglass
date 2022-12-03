@@ -4,7 +4,7 @@ on:
     branches: [ development ]
     paths-ignore:
       - '.github/workflows/**'
-      - '**.md'
+      - 'README.md'
 
 env:
   PR_REPO_NAME: pheonix-deploy-${{ github.event.pull_request.node_id }}
