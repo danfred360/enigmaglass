@@ -4,9 +4,8 @@ on:
     branches: [ development ]
     paths-ignore:
       - '.github/workflows/**'
+      - '!.github/workflows/deploy-pr.yml'
       - 'README.md'
-    paths:
-      - '.github/workflows/deploy-pr.yml'
 env:
   COMMIT_MSG: ${{ github.event.commits[0].message }}
 #   URL: dev.octobay.org
