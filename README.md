@@ -34,7 +34,7 @@ git checkout -b feature/my-cool-feature develop
 
 3. Create a pull request to merge your branch with `develop`.
 
-This pr will trigger [the Pheonix deploy](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/deploy-pr.yml) which creates a shortlived repository that is ownded by the enigmaglass-docs organization before deploying a build of your branch to that repo. Your version of the site will then be served at it's own external ip address.
+This pr will trigger [the Pheonix deploy](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/deploy-pr.yml) which creates a shortlived repository that is owned by the enigmaglass-docs organization before deploying a build of your branch to that repo. Your version of the site will then be served at it's own external URL.
 
 This stage is usefull for getting an idea of what your changes will look like if you can't run the site locally, or if you want to verify that the site behaves as it should when deployed on github pages. These workflow runs are aggregated in [the pr-staging environment](https://github.com/enigmaglass-docs/enigmaglass/deployments/activity_log?environment=pr-staging).
 
@@ -46,6 +46,12 @@ The Pheonix deploy is entireley optional.
 
 A push to `develop` will trigger [the Development Build and Deploy workflow](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/deploy-dev.yml) which will build the site and deploy it to [the enigmaglass-dev repository](https://github.com/enigmaglass-docs/enigmaglass-dev). The dev site can be accessed [here](https://enigmaglass-docs.github.io/enigmaglass-dev/).
 
-5. To complete the contribution and update the production site, create a pull request merging `develop` into `master`. In order to merge into `master` you will need 1 pr approval, [the development environment](https://github.com/enigmaglass-docs/enigmaglass/deployments/activity_log?environment=development) must be successfuly deployed to.
+[![Development Build and Deploy](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/deploy-dev.yml/badge.svg?branch=development)](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/deploy-dev.yml)
+
+5. To complete the contribution and update the production site, create a pull request merging `develop` into `master`. In order to merge into `master` you will need 1 pr approval, [the development environment](https://github.com/enigmaglass-docs/enigmaglass/deployments/activity_log?environment=development) must be successfuly deployed to. The Development build pipeline can be run manually from any branch to deploy that version of the site to the development environment.
+
+![workflow dispatch event trigger](../assets/workflow_dispatch_trigger.png)
 
 Your push into `master` will trigger [the Github pages build and deploy workflow](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/pages/pages-build-deployment) that deploys to [the github pages environment](https://github.com/enigmaglass-docs/enigmaglass/deployments/activity_log?environment=github-pages).
+
+[![pages-build-deployment](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/pages/pages-build-deployment)
