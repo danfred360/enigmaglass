@@ -1,8 +1,8 @@
-## Deployment Status
-| Branch | Live Site | Status |
-| - | - | - |
-| `main` | [Production Site](https://enigmaglass-docs.github.io/enigmaglass/) | [![pages-build-deployment](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/pages/pages-build-deployment) |
-| `development` | [Development Site](https://enigmaglass-docs.github.io/enigmaglass-dev/) | [![Development Build and Deploy](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/deploy-dev.yml/badge.svg?branch=development)](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/deploy-dev.yml) [![pages-build-deployment](https://github.com/enigmaglass-docs/enigmaglass-dev/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/enigmaglass-docs/enigmaglass-dev/actions/workflows/pages/pages-build-deployment)|
+## Project Status
+| Branch | Live Site | CICD Status | Test Status |
+| - | - | - | - |
+| `main` | [Production Site](https://enigmaglass-docs.github.io/enigmaglass/) | [![pages-build-deployment](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/pages/pages-build-deployment) | [![Run Tests - CodeQL](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/codeql.yml) |
+| `development` | [Development Site](https://enigmaglass-docs.github.io/enigmaglass-dev/) | [![Development Build and Deploy](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/deploy-dev.yml/badge.svg?branch=development)](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/deploy-dev.yml) [![pages-build-deployment](https://github.com/enigmaglass-docs/enigmaglass-dev/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/enigmaglass-docs/enigmaglass-dev/actions/workflows/pages/pages-build-deployment)| [![Run Tests - CodeQL](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/codeql.yml/badge.svg?branch=development)](https://github.com/enigmaglass-docs/enigmaglass/actions/workflows/codeql.yml) |
 
 ## Project Overview
 Welcome to the Enigma Glass training resource. Here you'll find:
