@@ -1,8 +1,8 @@
-title: Enigma Glass Documentation
-description: Training materials and case studies for the Enigma Glass SIEM platform
+title: Dev Enigma Glass Documentation
+description: Development Deployment of training materials and case studies for the Enigma Glass SIEM platform
 #baseurl: "/enigmaglass" # the subpath of your site, e.g. /blog
 remote_theme: "just-the-docs/just-the-docs"
-url: "https://danfred360.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "https://danfred360.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 
