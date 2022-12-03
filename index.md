@@ -18,3 +18,10 @@ Welcome to the Enigma Glass training resource. Here you'll find:
 > {: .warning }
 > A paragraph
 > </div>
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
