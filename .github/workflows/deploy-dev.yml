@@ -5,8 +5,6 @@ on:
     paths-ignore:
       - '.github/workflows/**'
       - 'README.md'
-    paths-include:
-      - '.github/workflows/deploy-dev.yml'
 # env:
 #   URL: dev.octobay.org
 
