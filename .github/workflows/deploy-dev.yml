@@ -1,0 +1,57 @@
+name: Development Build and Deploy
+on:
+  push:
+    branches: [ development ]
+    paths-ignore:
+      - '.github/workflows/**'
+      - '**.md'
+env:
+  URL: dev.octobay.org
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: development
+      url: https://${{ env.URL }}
+    steps:
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+      
+      # https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
+      - name: Set GitHub Actions as Commit Author
+        run: |
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
+          
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          path: 'build'
+      
+      - name: Build
+        run: |
+          cd build
+          gem install bundler
+          chmod -R 777 /src/jekyll
+          bundle install
+          bundle exec jekyll build
+          bundle exec rake search:init
+          cd ..
+      
+      - name: Checkout Dev Target
+        uses: actions/checkout@v2
+        with:
+          repository: enigmaglass-docs/enigmaglass-dev
+          path: 'deploy'
+          token: ${{ secrets.PAT }}
+      
+      - name: Push files to target
+        run: |
+          cp -r build/_site/* deploy
+          cd deploy
+          touch .nojekyll
+          echo ${{ env.URL }} > CNAME
+          git add .
+          git commit -m $GITHUB_SHA
+          git push
