@@ -5,7 +5,7 @@ nav_order: 1
 description: "Training materials and case studies for the Enigma Glass SIEM platform"
 permalink: /
 ---
-# Enigma Glass Training Materials
+# Arianna is cool
 {: .important-title .no_toc .fs-9}
 
 Welcome to the Enigma Glass training resource. Here you'll find:
