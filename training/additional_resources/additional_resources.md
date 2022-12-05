@@ -28,15 +28,15 @@ The CIA stands for confidentiality, integrity and availability. The CIA triad is
 
 <img src="./images/cia_triad.png" alt="drawing" width="500"/>
 
-### Confidentiality
+### Confidentiality:
 Confidentiality is the principle that ensures data and information are kept secret and secure from those that are not meant to know of or have access to. This is important becuase without assured privacy and security all data would be accessible to anyone at any given time. 
 
 With this principle, only those with authorized access will be able to access data that is secure. This principle helps guide individuals with securing data by implementing permissions, authentication, and authorization controls within their organization.
 
-### Integrity
+### Integrity:
 Integrity is the principle the ensures data is consistent, accurate, reliable, and secure. Integrity ensures data in transit or at rest is not tampered with or modified in any way by any unauthorized individuals.
 
-### Availability
+### Availability:
 Availability is the principle that ensures data is available and accessbile to authorized individuals while remaining secure and inaccessbible for those without access.
 
 ## What Are Insider Threats?
