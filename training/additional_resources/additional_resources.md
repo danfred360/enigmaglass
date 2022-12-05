@@ -73,3 +73,9 @@ The following are behaviors/actions typical of insider threats:
 2. Detect & Identify - Using both human and technological elements, monitor and identify potential threats
 3. Assess - Using all known information, follow the response plan that aligns with the scenario
 4. Manage - Continue to be proactive and manage an threat or potential threat
+
+##Links to More Resources
+<p> <a href="[/about/about_team.htm](https://www.cisa.gov/insider-threat-mitigation)">CISA</a> - Insider threat mitigation information content. </p>
+ 
+ - NIST - Data integrity
+- NIH - Preventing insider threats 
